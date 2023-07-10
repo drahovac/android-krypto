@@ -9,6 +9,7 @@ import com.ryankoech.krypto.feature_coin_list.domain.usecase.SaveDisplayCurrency
 import com.ryankoech.krypto.feature_home.core.util.EXCEPTION_MESSAGE
 import io.mockk.coEvery
 import io.mockk.mockk
+import junit.framework.TestCase.assertFalse
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.test.runTest
 import org.junit.Test
@@ -27,6 +28,7 @@ class SaveDisplayCurrencyDataUseCaseTest {
 
         val resource = saveDisplayCurrencyDataUseCase(hashMap)
 
+        assertFalse(true)
         assertThat(resource).isInstanceOf(Resource.Success::class.java)
     }
 
