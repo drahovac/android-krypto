@@ -39,4 +39,4 @@ jobs:
         run: echo 'org.gradle.jvmargs=-Xmx2048m' >> gradle.properties
 
       - name: Build Debug Apk
-        run: ./gradlew test
+        run: ./gradlew testDebug
